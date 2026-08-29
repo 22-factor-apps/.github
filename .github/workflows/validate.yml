@@ -1,0 +1,27 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  community-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Require public profile and policy documents
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s profile/README.md
+          test -s SECURITY.md
+          test -s CONTRIBUTING.md
+          test -s CODE_OF_CONDUCT.md
+          test -s SUPPORT.md
+          test -s .github/CODEOWNERS

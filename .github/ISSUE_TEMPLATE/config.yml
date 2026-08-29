@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the field guide
+    url: https://22-factor-apps.github.io/
+    about: Review the commandment, boundary, failure modes, and litmus test before proposing a change.
+  - name: Report a vulnerability privately
+    url: https://github.com/22-factor-apps/.github/security/advisories/new
+    about: Do not disclose credentials or sensitive evidence in a public issue.
