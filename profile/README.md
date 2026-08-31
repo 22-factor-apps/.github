@@ -6,8 +6,8 @@ understandable, trustworthy, changeable, and operable after it meets production.
 The project keeps ten durable constraints from the original Twelve-Factor App,
 retires two mechanisms whose intent now has a broader home, and adds twelve
 modern obligations covering interfaces, security, observability, supply chain,
-resilience, data, infrastructure, delivery, compatibility, ownership, cost, and
-sustainable operation.
+resilience, data, infrastructure, delivery, compatibility, formal correctness,
+safe languages, and sustainable operation.
 
 ## Start here
 
